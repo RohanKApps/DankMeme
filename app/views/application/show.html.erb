@@ -1,0 +1,48 @@
+ <head>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="main.css">
+     <div class="page-header">
+  <h1 style="font-weight: bold; margin-left: 1cm;">DankMeme Creator <small style="color:red; font-size: 15px">Beta</small></h1>
+</div>
+</head> 
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 style="color: darkgrey; font-family: cursive">Editor</h1>
+                <div class="panel panel-success"><div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Author</span>
+  <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+</div></div>
+                <div class="panel panel-success"><div class="input-group">
+  <input type="text" class="form-control" placeholder="Caption" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">50</span>
+</div></div>
+                <div class="panel panel-success"><div class="input-group">
+  <span class="input-group-addon">URL</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></span>
+</div><br><div class="button"><button type="submit" class="btn btn-default">Submit</button></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <img src="<%=@object.image%>">
+              <h3><%=@caption.caption%></h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+
+.btn btn-default{
+    text-align: center;
+}
+</style>
